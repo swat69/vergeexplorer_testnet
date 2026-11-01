@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-layout align-center justify-center text-xs-center mb-5 mt-3>
-      <h1>Verge ({{ $CURRENCY }}) Cryptocurrency Blockchain Explorer</h1>
+      <h1>__Testnet__ Verge ({{ $CURRENCY }})  __Testnet__</h1>
     </v-layout>
 
     <v-divider class="my-3 mx-2"></v-divider>
@@ -30,7 +30,7 @@
         <v-flex xs12 sm6 md3 py-2>
           <span
             class="primary--text"
-            :inner-html.prop="info.moneysupply | formatAmount | formatMuted"
+            :inner-html.prop="info.moneysupply | formatNumberUS"
           ></span>
           &nbsp;
           {{ $CURRENCY }}

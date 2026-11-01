@@ -2,15 +2,15 @@
   <div>
     <v-toolbar fixed app>
       <router-link :to="{ name: 'home'}">
-        <v-toolbar-title class="mr-3 white--text">
+        <v-toolbar-title class="mr-3 red--text">
           <img style="vertical-align:middle" :src="`${publicPath}logo.png`" alt="logo" class="mr-2" />
-          <span class="text-truncate">VergeExplorer</span>
+          <span class="text-truncate">- ! ! - TESTNET - ! ! -</span>
         </v-toolbar-title>
       </router-link>
 
       <v-toolbar-items class="hidden-xs-only">
         <v-btn flat v-for="(item, i) in items" :key="i" :to="item.to">
-          <v-icon left color="primary">{{ item.icon }}</v-icon>
+          <v-icon left color="yellow">{{ item.icon }}</v-icon>
           {{item.title}}
         </v-btn>
       </v-toolbar-items>
